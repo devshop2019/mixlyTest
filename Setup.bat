@@ -45,6 +45,14 @@ IF "%esp8266_select%"=="n" (
 	echo Yes
 )
 echo.
+set vesp8266_select=
+set /p vesp8266_select=安装 VIET ESP8266(y/n):
+IF "%vesp8266_select%"=="n" (
+	echo No
+) ELSE (
+	echo Yes
+)
+echo.
 set stm32_select=
 set /p stm32_select=安装 STM32(y/n):
 IF "%stm32_select%"=="n" (
@@ -140,6 +148,37 @@ IF "%esp8266_select%"=="n" (
 		echo.
 		cd "%~dp0"\PortableGit\cmd\
 		git clone https://gitee.com/devshop2019/win_esp8266 "%~dp0arduino\portable\packages\esp8266\
+	)
+)
+
+rem 更新esp8266硬件仓库
+IF "%vesp8266_select%"=="n" (
+	IF EXIST "%~dp0"\arduino\portable\packages\vietesp8266 (
+		del /f /s /q "%~dp0"\arduino\portable\packages\vietesp8266 > nul
+		rd /q /s "%~dp0"\arduino\portable\packages\vietesp8266 > nul
+	)
+	rem 删除ESP8266界面
+	del /f /s /q "%~dp0"\blockly\apps\mixly\index_board_Vietduino_ESP8266_1.0.html > nul
+) ELSE (
+	IF EXIST "%~dp0"\arduino\portable\packages\vietesp8266\.git (
+		echo A|xcopy "%~dp0"\PortableGit "%~dp0"\arduino\portable\packages\vietesp8266\PortableGit\ /s /f /h > nul
+		echo.
+		echo.
+		cd "%~dp0"\arduino\portable\packages\vietesp8266\PortableGit\cmd\
+		git reset --hard origin/master
+		git pull origin master
+		cd "%~dp0"
+		del /f /s /q "%~dp0"\arduino\portable\packages\vietesp8266\PortableGit > nul
+		rd /q /s "%~dp0"\arduino\portable\packages\vietesp8266\PortableGit > nul
+	) ELSE (
+		IF EXIST "%~dp0"\arduino\portable\packages\vietesp8266 (
+			del /f /s /q "%~dp0"\arduino\portable\packages\vietesp8266 > nul
+			rd /q /s "%~dp0"\arduino\portable\packages\vietesp8266 > nul
+		)
+		echo.
+		echo.
+		cd "%~dp0"\PortableGit\cmd\
+		git clone https://github.com/devshop2019/win_vesp8266.git "%~dp0arduino\portable\packages\vietesp8266\
 	)
 )
 
