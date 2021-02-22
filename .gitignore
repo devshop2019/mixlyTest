@@ -19,3 +19,4 @@ company/*.js
 company/*.xml
 myblock.js
 /PortableGit
+/arduino/portable/packages

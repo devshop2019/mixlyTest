@@ -1,0 +1,27 @@
+D:\git\github\devshop2019\mixlyTest\mixlyBuild\core\spiffs\spiffs_cache.cpp.o: \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3\cores\esp8266\spiffs\spiffs_cache.cpp \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3\cores\esp8266\spiffs\spiffs.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3\cores\esp8266\spiffs\spiffs_config.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/stdint.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/machine/_default_types.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/features.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/_intsup.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/string.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/newlib.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/config.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/xtensa/config/core-isa.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/reent.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/_ansi.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/_types.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/machine/_types.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/lock.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/cdefs.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/string.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/stdio.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/types.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/machine/types.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/stdio.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3/tools/sdk/libc/xtensa-lx106-elf/include/sys/pgmspace.h \
+ D:\git\github\devshop2019\mixlyTest\arduino\portable\packages\VietESP8266\hardware\esp8266\1.0.3\cores\esp8266\spiffs\spiffs_nucleus.h

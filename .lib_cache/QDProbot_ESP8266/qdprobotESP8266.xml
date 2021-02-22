@@ -1,0 +1,3141 @@
+<!--  type="company" 
+block="block/qdprobotESP8266.js" 
+generator="generator/qdprobotESP8266.js"  
+language="language/qdprobotESP8266" 
+lib="qdprobotESP8266" 
+media="media/qdprobotESP8266" -->
+
+<script type="text/javascript" src="../../blocks/company/qdprobotESP8266.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/qdprobotESP8266.js"></script>
+
+
+<category id="catqdprobotESP8266" name="齐护机器人IOT" colour="#27b6ac">
+ 
+<category id="catQDPIoT_screen1" name=".点阵屏基础screen" colour="270">
+  <block type="QDP_blink_8266" name="学习二维码"></block>
+  
+ <block type="qdp_lattice_max7219"></block>
+
+<block type="qdp_lattice_brightness">
+  <value name="brightness">
+  <shadow type="math_number">
+    <field name="NUM">15</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_lattice_finished_condition"></block>
+
+<block type="qdp_lattice_displayClear"></block>
+
+<block type="qdp_lattice_max7219_display">
+  <value name="display">
+  <shadow type="text">
+    <field name="TEXT">Mixly</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_lattice_max7219_Scroll_display">
+  <value name="str">
+  <shadow type="text">
+    <field name="TEXT">Mixly</field>
+  </shadow>
+</value>
+  <value name="speed">
+  <shadow type="math_number">
+    <field name="NUM">50</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_lattice_centered_display1">
+  <value name="Display_content">
+  <shadow type="text">
+    <field name="TEXT">Mixly</field>
+  </shadow>
+</value>
+  <value name="Display_speed">
+  <shadow type="math_number">
+    <field name="NUM">10</field>
+  </shadow>
+</value>
+  <value name="display_time">
+  <shadow type="math_number">
+    <field name="NUM">1000</field>
+  </shadow>
+</value>
+  <value name="Enter_effect">
+  <block type="qdp_lattice_effect">
+  </block>
+</value>
+  <value name="Exit_effect">
+  <block type="qdp_lattice_effect">
+  </block>
+</value>
+</block>
+
+<block type="qdp_lattice_elf_animation"></block>
+<block type="qdp_lattice_preset_animation"></block>
+<block type="qdp_lattice_image_sprite">
+  <value name="width">
+  <shadow type="math_number">
+    <field name="NUM">8</field>
+  </shadow>
+</value>
+ <value name="number_of_turns">
+  <shadow type="math_number">
+    <field name="NUM">6</field>
+  </shadow>
+</value> 
+</block>
+
+ <block type="qdp_lattice_image_sprite_animation">
+ <value name="animation_start_wizard">
+  <shadow type="math_number">
+    <field name="NUM">Image_sprite</field>
+  </shadow>
+</value>
+ <value name="width">
+  <shadow type="math_number">
+    <field name="NUM">8</field>
+  </shadow>
+</value>
+ <value name="number_of_turns">
+  <shadow type="math_number">
+    <field name="NUM">6</field>
+  </shadow>
+</value>
+ <value name="animation_end_wizard">
+  <shadow type="math_number">
+    <field name="NUM">Image_sprite</field>
+  </shadow>
+</value>
+ <value name="width1">
+  <shadow type="math_number">
+    <field name="NUM">8</field>
+  </shadow>
+</value>
+ <value name="number_of_turns1">
+  <shadow type="math_number">
+    <field name="NUM">6</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_lattice_max7219_setpoint">
+  <value name="abscissa">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+ <value name="ordinate">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="status">
+  <shadow type="logic_boolean">
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_max7219_point_status">
+  <value name="abscissa">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+ <value name="ordinate">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+
+<block type="qdp_lattice_mx_drawline">
+  <value name="origin_abscissa">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+ <value name="starting_point_ordinate">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="end_abscissa">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+ <value name="end_ordinate">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="status">
+  <shadow type="logic_boolean">
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_lattice_max7219_bitmap">
+  <value name="abscissa">
+  <shadow type="math_number">
+    <field name="NUM">7</field>
+  </shadow>
+</value>
+ <value name="number_of_columns">
+  <shadow type="math_number">
+    <field name="NUM">8</field>
+  </shadow>
+</value>
+ <value name="bitmap">
+  <shadow type="math_number">
+    <field name="NUM">bitmap</field>
+  </shadow>
+</value>
+</block>
+
+ <block type="qdp_lattice_max7219_definition_bitmap"></block>
+<block type="qdp_lattice_display_Matrix_LedArray1"></block>
+
+</category> 
+ <category id="catQDPIoT_screen2" name=".点阵屏高级screen" colour="270">
+
+ <block type="QDP_priority_display"></block>
+
+ <block type="region_qdp_lattice_max7219">
+   <value name="region">
+  <shadow type="math_number">
+    <field name="NUM">2</field>
+  </shadow>
+</value>  
+ </block>
+
+ <block type="region_qdp_partition_display_initialization">
+  <value name="region">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="start">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="end">
+  <shadow type="math_number">
+    <field name="NUM">1</field>
+  </shadow>
+</value>
+</block>
+
+<block type="region_qdp_lattice_brightness">
+  <value name="region">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>  
+  <value name="brightness">
+  <shadow type="math_number">
+    <field name="NUM">15</field>
+  </shadow>
+</value>
+</block>
+
+<block type="region_qdp_lattice_finished_condition">
+ <value name="region">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_area_clear_screen">
+ <value name="region">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+<block type="region_qdp_lattice_centered_display">
+<value name="region">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="Display_content">
+  <shadow type="text">
+    <field name="TEXT">Mixly</field>
+  </shadow>
+</value>
+  <value name="Display_speed">
+  <shadow type="math_number">
+    <field name="NUM">10</field>
+  </shadow>
+</value>
+  <value name="display_time">
+  <shadow type="math_number">
+    <field name="NUM">1000</field>
+  </shadow>
+</value>
+  <value name="Enter_effect">
+  <block type="qdp_lattice_effect">
+  </block>
+</value>
+  <value name="Exit_effect">
+  <block type="qdp_lattice_effect">
+  </block>
+</value>
+</block>
+
+ <block type="region_qdp_lattice_image_sprite_animation">
+  <value name="region">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>  
+ <value name="animation_start_wizard">
+  <shadow type="math_number">
+    <field name="NUM">Image_sprite</field>
+  </shadow>
+</value>
+ <value name="width">
+  <shadow type="math_number">
+    <field name="NUM">8</field>
+  </shadow>
+</value>
+ <value name="number_of_turns">
+  <shadow type="math_number">
+    <field name="NUM">6</field>
+  </shadow>
+</value>
+ <value name="animation_end_wizard">
+  <shadow type="math_number">
+    <field name="NUM">Image_sprite</field>
+  </shadow>
+</value>
+ <value name="width1">
+  <shadow type="math_number">
+    <field name="NUM">8</field>
+  </shadow>
+</value>
+ <value name="number_of_turns1">
+  <shadow type="math_number">
+    <field name="NUM">6</field>
+  </shadow>
+</value>
+</block>
+
+
+
+
+</category> 
+
+<category id="catQDPsensor" name=".传感器Sensor" colour="#27b6ac">
+
+   <block type="QDP_OneButton_interrupt"></block>  
+    <block type="qdp_ESP8266_buttonl"></block>  
+     <block type="qdp_ESP8266_buttonx"></block> 
+     <block type="qdp_ESP8266_buttonfuction1"></block>
+    <block type="qdp_ESP8266_button1"></block>  
+     <block type="qdp_ESP8266_chaoshengbo"></block> 
+     <block type="qdp_ESP8266_grayscale"></block> 
+     <block type="qdp_ESP8266_lightSensor"></block>
+    <block type="qdp_ESP8266_sound"></block> 
+     <block type="qdp_ESP8266_potentiometer"></block>
+  <block type="qdp_ESP8266_Soilmoisture"></block>
+          
+    
+  
+ <block type="qdp_ESP8266_dht11">
+    <value name="PIN">
+     <shadow type="pins_digital2">
+       
+     </shadow>
+     </value>
+  </block>  
+  
+  <block type="qdp_ESP8266_yscgq">
+  <value name="num1">
+  <shadow type="math_number">
+  <field name="NUM">0x29</field>
+  </shadow>
+  </value>
+  </block> 
+
+  <block type="qdp_yscgq2"></block>
+
+  <block type="qdp_yscgq3">
+  <value name="num1">
+  <shadow type="math_number">
+  <field name="NUM">0</field>
+  </shadow>
+  </value>
+  <value name="num2">
+  <shadow type="math_number">
+  <field name="NUM">10</field>
+  </shadow>
+  </value>
+  </block> 
+
+  <block type="QDP_ESP8266_MPU6050_update"></block>
+  <block type="QDP_ESP8266_MPU6050_Angle_reset" ></block> 
+  <block type="QDP_ESP8266_MPU6050_GETDATA"></block>
+
+
+
+   
+    <block type="DS1302_init">
+            <value name="RST">
+                <shadow type="pins_digital">
+                    <field name="PIN">
+                        2
+                    </field>
+                </shadow>
+            </value>
+            <value name="DAT">
+                <shadow type="pins_digital">
+                    <field name="PIN">
+                        3
+                    </field>
+                </shadow>
+            </value>
+            <value name="CLK">
+                <shadow type="pins_digital">
+                    <field name="PIN">
+                        4
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="DS1307_init">
+            <value name="SDA">
+                <shadow type="pins_digital">
+                    <field name="PIN">
+                        SDA
+                    </field>
+                </shadow>
+            </value>
+            <value name="SCL">
+                <shadow type="pins_digital">
+                    <field name="PIN">
+                        SCL
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="RTC_get_time">
+        </block>
+        <block type="RTC_time">
+            <value name="hour">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        8
+                    </field>
+                </shadow>
+            </value>
+            <value name="minute">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        0
+                    </field>
+                </shadow>
+            </value>
+            <value name="second">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        0
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="RTC_date">
+            <value name="year">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        2020
+                    </field>
+                </shadow>
+            </value>
+            <value name="month">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        1
+                    </field>
+                </shadow>
+            </value>
+            <value name="day">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        1
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="RTC_set_time">
+            <value name="date">
+                <shadow type="text">
+                    <field name="TEXT">
+                        Jan/01/2020
+                    </field>
+                </shadow>
+                <block type="RTC_date">
+                    <value name="year">
+                        <shadow type="math_number">
+                            <field name="NUM">
+                                2020
+                            </field>
+                        </shadow>
+                    </value>
+                    <value name="month">
+                        <shadow type="math_number">
+                            <field name="NUM">
+                                1
+                            </field>
+                        </shadow>
+                    </value>
+                    <value name="day">
+                        <shadow type="math_number">
+                            <field name="NUM">
+                                1
+                            </field>
+                        </shadow>
+                    </value>
+                </block>
+            </value>
+            <value name="time">
+                <shadow type="text">
+                    <field name="TEXT">
+                        12:34:56
+                    </field>
+                </shadow>
+                <block type="RTC_time">
+                    <value name="hour">
+                        <shadow type="math_number">
+                            <field name="NUM">
+                                8
+                            </field>
+                        </shadow>
+                    </value>
+                    <value name="minute">
+                        <shadow type="math_number">
+                            <field name="NUM">
+                                0
+                            </field>
+                        </shadow>
+                    </value>
+                    <value name="second">
+                        <shadow type="math_number">
+                            <field name="NUM">
+                                0
+                            </field>
+                        </shadow>
+                    </value>
+                </block>
+            </value>
+        </block>
+        <block type="get_system_date_time">
+        </block>
+
+        <block type="QDP_bmp180_begin">
+            <field name="bmp180_name">
+                BMP
+            </field>
+            <value name="bmp180_oversampling">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        0
+                    </field>
+                </shadow>
+                <block type="make_arduino_bmp180_oversampling">
+                    <field name="type">
+                        BMP085_ULTRALOWPOWER
+                    </field>
+                </block>
+            </value>
+        </block>
+        <block type="QDP_bmp180_get_temperature_pressure">
+        </block>
+        <block type="QDP_bmp180_get_altitude">
+            <value name="bmp180_get_altitude_data">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        101325
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="QDP_paj7620_begin">
+        </block>
+        <block type="QDP_paj7620_data">
+        </block>
+        <block type="weightSensor">
+            <value name="scale">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        415
+                    </field>
+                </shadow>
+            </value>
+        </block>
+    </category>  
+
+    <category id="catQDPcontor" name=".执行器Actuator" colour="#AE8F00">
+        <block type="qdp_inout_highlow"></block>
+        <block type="qdp_ESP8266_Load_Output"> 
+          <value name="STAT">
+              <shadow type="qdp_inout_highlow">
+              </shadow>
+          </value>
+        </block> 
+        <block type="qdp_ESP8266_ledlight"> 
+          <value name="STAT">
+              <shadow type="qdp_inout_highlow">
+              </shadow>
+          </value>
+        </block> 
+        <block type="qdp_ESP8266_read_ledlight"> 
+        </block> 
+        <block type="qdp_ESP8266_ledlight3">
+          <value name="ledn">
+          <shadow type="math_number">
+          <field name="NUM">0</field>
+          </shadow>
+          </value>
+        </block> 
+
+        <block type="qdp_ESP8266_relay"> 
+          <value name="STAT">
+              <shadow type="qdp_inout_highlow">
+              </shadow>
+          </value>
+        </block> 
+        <block type="qdp_ESP8266_read_relay"> 
+        </block> 
+<block type="rgb_ESP8266_led">
+
+  <value name="num8">
+  <shadow type="math_number">
+  <field name="NUM">4</field>
+  </shadow>
+  </value>
+
+  <value name="num1">
+  <shadow type="math_number">
+  <field name="NUM">0</field>
+  </shadow>
+  </value>
+  <value name="R">
+  <shadow type="math_number">
+  <field name="NUM">0</field>
+  </shadow>
+  </value>
+  <value name="G">
+  <shadow type="math_number">
+  <field name="NUM">0</field>
+  </shadow>
+  </value>
+  <value name="B">
+  <shadow type="math_number">
+  <field name="NUM">0</field>
+  </shadow>
+  </value>
+</block>
+
+<block type="ESP8266_rgbled2">
+ 
+  <value name="num8">
+  <shadow type="math_number">
+  <field name="NUM">4</field>
+  </shadow>
+  </value>
+
+  <value name="num1">
+  <shadow type="math_number">
+  <field name="NUM">0</field>
+  </shadow>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_buzzer3" >
+  <field name="CHANNEL">0</field>
+  <value name="PIN2">
+    <shadow type="qdp_buzzer_Dropdown">
+      <field name="PIN2">784</field>
+    </shadow>
+  </value>
+  <value name="DURATION">
+    <shadow type="math_number" >
+    <field name="NUM">500</field>
+    </shadow>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_stop_buzzer3" ></block>
+ 
+ <block type="qdp_ESP8266_buzzer_music">
+  <value name="PIN2">
+  <shadow type="qdp_ESP8266_buzzer_musics">
+  </shadow>
+  </value>
+  </block>
+
+<block type="qdp_ESP8266_servomotor360">
+<value name="num1">
+<shadow type="math_number">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_servomotor2">
+<value name="num1">
+<shadow type="math_number">
+<field name="NUM">0</field>
+</shadow>
+</value>
+<value name="time">
+<shadow type="math_number">
+<field name="NUM">0</field>
+</shadow>
+</value>
+</block>
+
+
+
+
+
+<block type="qdp_ESP8266_servomotorread">
+
+</block>
+
+ 
+
+</category> 
+
+<category id="catQDPQFHC" name=".语音合成Speech" colour="#e386a1">
+  <block type="QDPESP8266Voice">
+            <value name="delayTime">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        500
+                    </field>
+                </shadow>
+            </value>
+            <value name="addr">
+                <shadow type="QDPESP8266Voice_Dropdown">
+                    <field name="PIN2">0</field>
+                </shadow>
+            </value>
+        </block>
+  <block type="QDP8266_ASR_SendData"></block>
+ <block type="QDP8266_ASR_ReceiveData"></block>
+ 
+ <block type="QDP8266_ASR_CompareData"></block>
+
+    <block type="qdp_ESP8266_QF_hc_init">   </block>
+
+   
+<block type="qdp_ESP8266_QF_hc">
+  <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">8</field>
+    </shadow>
+  </value>
+  <value name="num2">
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+  <value name="num3">
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+  <value name="TEXT">
+  <shadow type="text">
+  <field name="TEXT">中/E/拼/不支持变量</field>
+  </shadow>
+  </value>
+  <value name="arrayName">
+  <shadow type="text">
+  <field name="TEXT">array1</field>
+  </shadow>
+  </value>
+  </block>
+  <block type="qdp_ESP8266_QF_hc_en">
+  <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">8</field>
+    </shadow>
+  </value>
+  <value name="num2">
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+  <value name="num3">
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+  <value name="TEXT">
+  <shadow type="text">
+  <field name="TEXT">English/变量</field>
+  </shadow>
+  </value>
+  </block>
+
+<block type="qdp_ESP8266_QF_hc_chinese">
+  <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">8</field>
+    </shadow>
+  </value>
+  <value name="num2">
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+  <value name="num3">
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+  <value name="TEXT">
+  <shadow type="text">
+  <field name="TEXT">实时变量</field>
+  </shadow>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_QF_sound">
+  <value name="num1">
+    <shadow type="math_number">
+      <field name="NUM">01</field>
+    </shadow>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_QF_stophc">
+</block>
+
+<block type="qdp_ESP8266_QF_startstopsb">
+</block>
+
+<block type="qdp_ESP8266_QF_sbjg">
+  <value name="TEXT">
+    <shadow type="text">
+    <field name="TEXT">yes ok</field>
+    </shadow>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_QF_sbjg2"></block>
+
+<block type="qdp_ESP8266_QF_hc_init" >
+  <field name="PIN">1</field>
+  <next>
+    <block type="qdp_ESP8266_QF_startstopsb" >
+      <field name="PIN33">1</field>
+      <next>
+        <block type="controls_if" >
+          <mutation elseif="1">
+          </mutation><value name="IF0">
+            <block type="qdp_ESP8266_QF_sbjg2" >
+              <field name="pinn2">\u628A\u706F\u6253\u5F00</field>
+              <value name="arrayName">
+                <shadow type="text" >
+                  <field name="TEXT">sbjg1</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <value name="IF1">
+            <block type="qdp_ESP8266_QF_sbjg2">
+              <field name="pinn2">\u505C\u6B62\u6267\u884C</field>
+              <value name="arrayName">
+                <shadow type="text" >
+                  <field name="TEXT">sbjg2</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+  </next>
+</block>
+
+
+</category> 
+
+
+
+
+
+<category id="catQDPcommunication" name=".通讯Communicate" colour="#6c91ac">
+
+
+<block type="qdp_ESP8266_ir_re2"></block>
+
+
+
+<block type="qdp_ESP8266_ir_send_nec">
+<value name="data">
+<shadow type="math_number">
+<field name="NUM">0xCF</field>
+</shadow>
+</value>
+<value name="bits">
+<shadow type="math_number">
+<field name="NUM">32</field>
+</shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_ir_recv_raw"> </block>
+
+    <block type="qdp_ESP8266_ir_send_raw">
+  <field name="TEXT">0,0,0</field>
+    <value name="length">
+      <shadow type="math_number">
+        <field name="NUM">3</field>
+      </shadow>
+    </value>
+    <value name="freq">
+      <shadow type="math_number">
+        <field name="NUM">38</field>
+      </shadow>
+    </value>
+  </block>
+
+
+<block type="qdp_ESP8266_BT_START">
+  <value name="VALUE">
+  <shadow type="text">
+  <field name="TEXT">QDPRobotBT</field>
+  </shadow>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_BT_button">
+  <value name="TEXT">
+  <shadow type="text">
+  <field name="TEXT">U</field>
+  </shadow>
+  </value>
+  </block>
+
+<block type="qdp_ESP8266_BT_variable"></block>
+
+
+
+
+  <block type="qdp_ESP8266_BT_print">
+  
+  <value name="N1">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+    </value>
+  <value name="N2">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+    </value>
+  <value name="N3">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+    </value>
+  <value name="N4">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+    </value>
+    <value name="N5">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+    </value>
+  
+  </block>  
+
+
+
+
+
+
+
+<block type="qdp_ESP8266_serial_jieshouzhi">
+<value name="text">
+<shadow type="text">
+<field name="TEXT">hello</field>  
+</shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_serial_fasong">
+  <value name="text">
+  <block type="math_number" >
+  <field name="NUM">0x7E</field>
+  </block>
+  </value>
+</block>
+
+<block type="qdp_ESP8266_serial_jieshou">
+<value name="num">
+<shadow type="math_number">
+<field name="NUM">1234</field>  
+</shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_serial_suju">
+<value name="num">
+<shadow type="math_number">
+<field name="NUM">1234</field>  
+</shadow>
+</value>
+</block>
+
+  </category> 
+  <category id="QDPMP3" name=".MP3" colour="#B766AD">
+    <block type="ESP8266_Mp3_init"></block>
+
+  <block type="qdp_ESP8266_MP3_bofangx">
+  <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">20</field>
+    </shadow>
+  </value>
+  <value name="num2">
+  <shadow type="math_number">
+  <field name="NUM">1</field>
+  </shadow>
+  </value>
+    </block>
+    </value>
+  </block>
+
+  <block type="qdp_ESP8266_MP3_yingliang">
+  <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">20</field>
+    </shadow>
+  </value>    
+    </block>
+    </value>
+  </block>
+
+  <block type="qdp_ESP8266_MP3_loopplay">
+  <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">20</field>
+    </shadow>
+  </value>
+  <value name="num2">
+  <shadow type="math_number">
+  <field name="NUM">1</field>
+  </shadow>
+  </block>
+
+  <block type="qdp_ESP8266_MP3_startpause"> 
+  </shadow>
+  </value>
+    </block>
+
+    <block type="qdp_ESP8266_MP3_previous_next"> 
+  </shadow>
+  </value>
+    </block>
+
+    <block type="qdp_ESP8266_MP3_play">
+    <value name="num">
+  <shadow type="math_number">
+  <field name="NUM">20</field>
+    </shadow>
+  </value> 
+      </block>
+
+<block type="qdp_ESP8266_define_mp3_directory"></block>
+
+<block type="qdp_ESP8266_mp3_designated_play">
+  <value name="num">
+    <shadow type="math_number">
+      <field name="NUM">20</field>
+    </shadow>
+  </value>  
+  <value name="NAME">
+    <shadow type="text">
+      <field name="TEXT">歌曲1</field>
+    </shadow>
+  </value>
+</block>  
+
+  </category>
+
+<category id="catQDPshow" name=".显示器Display" colour="#e36a69">
+<category id="catSegmentDisplay" name=".数码管Digit display" colour="#e36a69">
+<block type="qdp_ESP8266_display">
+<value name="VALUE">
+        <shadow type="text">
+          <field name="TEXT">2345</field>
+        </shadow>
+      </value>
+</block>
+
+<block type="qdp_ESP8266_display_clear"></block>
+
+
+<block type="qdp_ESP8266_displayoff"></block> 
+ <block type="qdp_ESP8266_display_TM1637_init">
+        </block>
+        <block type="display_TM1637_Brightness">
+            <value name="Brightness">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        20
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="display_TM1637_clearDisplay">
+        </block>
+        <block type="display_TM1637_displyPrint">
+            <value name="VALUE">
+                <shadow type="text">
+                    <field name="TEXT">
+                        2345
+                    </field>
+                </shadow>
+            </value>
+            <value name="Speed">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        300
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="display_TM1637_displayTime">
+            <value name="hour">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        12
+                    </field>
+                </shadow>
+            </value>
+            <value name="minute">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        30
+                    </field>
+                </shadow>
+            </value>
+            <value name="STAT">
+                <shadow type="inout_highlow">
+                </shadow>
+            </value>
+        </block>
+
+</category>
+
+<category id="catOLED" name=".OLED" colour="#e36a69">
+<block type="ESP8266_oled_init">
+    <next>
+      <block type="ESP8266_oled_page">
+        <statement name="DO">
+          <block type="procedures_callnoreturn">
+            <mutation name="page1"></mutation>
+          </block>
+        </statement>
+      </block>
+    </next>
+</block>
+
+<block type="ESP8266_oled_set_EN_Font">
+  </block>
+  <block type="ESP8266_oled_set_CN_Font">
+  </block>
+
+<block type="procedures_defnoreturn">
+    <field name="NAME">page1</field>
+    <statement name="STACK">
+      <block type="ESP8266_oled_set_EN_Font">
+        <field name="TYPE">timR08_tr</field>
+        <next>
+          <block type="ESP8266_oled_print" >
+            <value name="POS_X">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="POS_Y">
+              <shadow type="math_number">
+                <field name="NUM">20</field>
+              </shadow>
+            </value>
+            <value name="TEXT">
+              <shadow type="text">
+                <field name="TEXT">1234</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="ESP8266_oled_define_bitmap_data"></block>
+  <block type="ESP8266_oled_clear"></block>
+  <block type="QDP_getutf8width">
+ <value name="str">
+   <shadow type="text">
+    <field name="TEXT">hello</field>
+  </shadow>
+</value>
+</block>
+<block type="ESP8266_u8g2_setContrast">
+   <value name="Contrast">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value> 
+</block>
+  <block type="ESP8266_oled_face">
+   <value name="POS_X">
+    <shadow type="math_number">
+      <field name="NUM">20</field>
+    </shadow>
+  </value>
+  <value name="POS_Y">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value>
+  <field name="Icon_size"></field>
+</block>
+<block type="ESP8266_oled_icons">
+ <value name="POS_X">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+<value name="POS_Y">
+  <shadow type="math_number">
+    <field name="NUM">20</field>
+  </shadow>
+</value>
+<field name="Icon_size"></field>
+</block>
+<block type="ESP8266_oled_showBitmap" >
+  <value name="START_X">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value>
+  <value name="START_Y">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value>
+  <value name="WIDTH">
+    <shadow type="math_number">
+      <field name="NUM">128</field>
+    </shadow>
+  </value>
+  <value name="HEIGHT">
+    <shadow type="math_number">
+      <field name="NUM">64</field>
+    </shadow>
+  </value>
+  <value name="bitmap_name">
+    <block type="text">
+      <field name="TEXT">bitmap1</field>
+    </block>
+  </value>
+</block>
+<block type="ESP8266_oled_drawPixel" >
+  <value name="POS_X">
+    <shadow type="math_number">
+      <field name="NUM">64</field>
+    </shadow>
+  </value>
+  <value name="POS_Y">
+    <shadow type="math_number">
+      <field name="NUM">32</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_drawLine">
+  <value name="START_X">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="START_Y">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="END_X">
+    <shadow type="math_number">
+      <field name="NUM">15</field>
+    </shadow>
+  </value>
+  <value name="END_Y">
+    <shadow type="math_number">
+      <field name="NUM">20</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_draw_Str_Line">
+  <value name="START_X">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="START_Y">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="LENGTH">
+    <shadow type="math_number">
+      <field name="NUM">30</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_drawFrame">
+  <value name="D0_X">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="D0_Y">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="WIDTH">
+    <shadow type="math_number">
+      <field name="NUM">10</field>
+    </shadow>
+  </value>
+  <value name="HEIGHT">
+    <shadow type="math_number">
+      <field name="NUM">20</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_drawRFrame">
+  <value name="D0_X">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="D0_Y">
+    <shadow type="math_number">
+      <field name="NUM">1</field>
+    </shadow>
+  </value>
+  <value name="WIDTH">
+    <shadow type="math_number">
+      <field name="NUM">10</field>
+    </shadow>
+  </value>
+  <value name="HEIGHT">
+    <shadow type="math_number">
+      <field name="NUM">20</field>
+    </shadow>
+  </value>
+  <value name="RADIUS">
+    <shadow type="math_number">
+      <field name="NUM">3</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_drawCircle">
+  <value name="D0_X">
+    <shadow type="math_number">
+      <field name="NUM">30</field>
+    </shadow>
+  </value>
+  <value name="D0_Y">
+    <shadow type="math_number">
+      <field name="NUM">30</field>
+    </shadow>
+  </value>
+  <value name="RADIUS">
+    <shadow type="math_number">
+      <field name="NUM">6</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_drawEllipse">
+  <value name="D0_X">
+    <shadow type="math_number">
+      <field name="NUM">30</field>
+    </shadow>
+  </value>
+  <value name="D0_Y">
+    <shadow type="math_number">
+      <field name="NUM">30</field>
+    </shadow>
+  </value>
+  <value name="RADIUS_X">
+    <shadow type="math_number">
+      <field name="NUM">6</field>
+    </shadow>
+  </value>
+  <value name="RADIUS_Y">
+    <shadow type="math_number">
+      <field name="NUM">15</field>
+    </shadow>
+  </value>
+</block>
+<block type="ESP8266_oled_drawTriangle" >
+  <value name="D0_X">
+    <shadow type="math_number">
+      <field name="NUM">14</field>
+    </shadow>
+  </value>
+  <value name="D0_Y">
+    <shadow type="math_number">
+      <field name="NUM">55</field>
+    </shadow>
+  </value>
+  <value name="D1_X">
+    <shadow type="math_number">
+      <field name="NUM">45</field>
+    </shadow>
+  </value>
+  <value name="D1_Y">
+    <shadow type="math_number">
+      <field name="NUM">33</field>
+    </shadow>
+  </value>
+  <value name="D2_X">
+    <shadow type="math_number">
+      <field name="NUM">8</field>
+    </shadow>
+  </value>
+  <value name="D2_Y">
+    <shadow type="math_number">
+      <field name="NUM">43</field>
+    </shadow>
+  </value>
+</block>
+
+
+</category >
+<category colour="#e36a69" id="catLCDDisplay" name=".LCD">
+         <block type="QDP_ESP8266_group_lcd_init2">
+            <value name="device">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        0x27
+                    </field>
+                </shadow>
+            </value>
+        </block>
+        <block type="group_lcd_print">
+            <value name="TEXT">
+                <block type="text">
+                    <field name="TEXT">
+                    </field>
+                </block>
+            </value>
+            <value name="TEXT2">
+                <block type="text">
+                    <field name="TEXT">
+                    </field>
+                </block>
+            </value>
+        </block>
+        <block type="group_lcd_print2">
+            <value name="row">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        1
+                    </field>
+                </shadow>
+            </value>
+            <value name="column">
+                <shadow type="math_number">
+                    <field name="NUM">
+                        1
+                    </field>
+                </shadow>
+            </value>
+            <value name="TEXT">
+                <block type="text">
+                    <field name="TEXT">
+                    </field>
+                </block>
+            </value>
+        </block>
+        <block type="group_lcd_power">
+            <field name="STAT">
+                clear
+            </field>
+        </block>LCD   
+</category>
+
+<!--小彩屏-->
+<category id="catSmallDisplay" name=".彩屏Sdisplay" colour="#e36a69">
+
+<block type="QDP_ESP8266_display_samll_init" name="彩屏初始化">
+ </block>
+<block type="QDP_ESP8266_display_samll_refresh_display">
+  <statement name="DO">
+    <block type="QDP_make_arduino_comment_text_1">
+    <field name="data">\u6267\u884C\u663E\u793A,\u6240\u6709\u5F69\u5C4F\u663E\u793A\u6307\u4EE4\u8BF7\u653E\u7F6E\u5728\u8FD9\u91CC.</field>
+    </block>
+  </statement>
+</block>
+<block type="QDP_ESP8266_display_samll_HV" name="横坚屏设置">
+ </block>
+
+<block type="QDP_ESP8266_display_samll_BL" name="屏亮度">
+  <value name="QDP_display_samll_bl_1">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+ </block>
+ <block type="QDP_ESP8266_display_color_2020_01_25"></block>
+
+<block type="QDP_ESP8266_display_samll_clr" name="颜色刷屏/背景色">
+  <value name="QDP_display_samll_clr_1">
+          <shadow type="math_number">
+            <field name="NUM">8</field>
+          </shadow>
+        </value>
+ </block>
+<block type="QDP_ESP8266_display_samll_flash_pic" name="图片显示"></block>
+<block type="QDP_ESP8266_display_samll_pic" name="图片显示">
+  <value name="QDP_display_samll_pic_add">
+          <shadow type="math_number">
+            <field name="NUM">2097152</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pic_X">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pic_Y">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pic_W">
+          <shadow type="math_number">
+            <field name="NUM">128</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pic_H">
+          <shadow type="math_number">
+            <field name="NUM">160</field>
+          </shadow>
+        </value>
+ </block>
+
+<block type="QDP_ESP8266_display_samll_PS" name="画点指令">
+<value name="QDP_display_samll_ps_X">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_ps_Y">
+          <shadow type="math_number">
+            <field name="NUM">80</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_ps_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+ </block>
+
+<block type="QDP_ESP8266_display_samll_PL" name="画线框指令">
+<value name="QDP_display_samll_pl_X">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pl_Y">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pl_X2">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_pl_Y2">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>        
+<value name="QDP_display_samll_pl_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+ </block>
+
+<block type="QDP_ESP8266_display_samll_CIR" name="画圆指令">
+<value name="QDP_display_samll_cir_X">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_cir_Y">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_cir_R">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>    
+<value name="QDP_display_samll_cir_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+ </block>
+
+<block type="QDP_ESP8266_display_samll_DC" name="显示文本">
+ 
+  <value name="QDP_display_samll_dc_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+
+<value name="QDP_display_samll_dc_X">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_dc_Y">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_dc_text">
+          <shadow type="text">
+            <field name="TEXT">English/变量</field>
+          </shadow>
+        </value>        
+
+ </block>
+
+<block type="QDP_ESP8266_display_samll_CN" name="显示中文">
+ 
+  <value name="QDP_display_samll_dc_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+
+<value name="QDP_display_samll_dc_X">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_dc_Y">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+ <value name="arrayName">
+  <shadow type="text">
+  <field name="TEXT">array1</field>
+  </shadow>
+  </value>
+<value name="QDP_display_samll_dc_text">
+          <shadow type="text">
+            <field name="TEXT">中文</field>
+          </shadow>
+        </value>        
+
+ </block>
+
+ <block type="QDP_ESP8266_display_samll_CN_1" name="显示中文_1">
+ 
+  <value name="QDP_display_samll_dc_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+
+<value name="QDP_display_samll_dc_X">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_dc_Y">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_dc_text">
+          <shadow type="text">
+            <field name="TEXT">实时变量</field>
+          </shadow>
+        </value>        
+
+ </block>
+
+<block type="QDP_ESP8266_display_samll_SBCDC" name="显示带底色文本">
+
+  <value name="QDP_display_samll_sbcdc_colou2">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+ 
+  <value name="QDP_display_samll_sbcdc_colou">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+
+<value name="QDP_display_samll_sbcdc_X">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_sbcdc_Y">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+<value name="QDP_display_samll_sbcdc_text">
+          <shadow type="text">
+            <field name="TEXT">English/变量</field>
+          </shadow>
+        </value>        
+
+ </block>
+
+
+
+<block type="QDP_ESP8266_display_samll_order">
+  <value name="text">
+  <shadow type="text">
+    <field name="TEXT">command</field>
+  </shadow>
+</value>
+</block>
+
+
+
+
+
+ <block type="QDP_ESP8266_display_samll_btl" name="波特率">
+ </block>    
+</category >     
+
+
+</category> 
+
+
+
+<category id="catblynkIOT"  name=".物联网IOT" colour="#7B68EE">
+ <block type="QDP_blynk_QR" name="二维码">
+ </block>
+
+
+    
+
+
+ <block type="QDP_ESP8266_blynk_server" name="服务器信息">
+  <value name="qdp_server_add">
+    <shadow type="text">
+      <field name="TEXT">182.61.28.31</field>
+    </shadow>
+  </value>
+  <value name="qdp_auth_key">
+    <shadow type="text">
+      <field name="TEXT">Get Authtoken from your Blynk project settings！</field>
+    </shadow>
+  </value>
+  <value name="qdp_wifi_ssid">
+    <shadow type="text">
+      <field name="TEXT">QDP</field>
+    </shadow>
+  </value>
+  <value name="qdp_wifi_pass">
+    <shadow type="text">
+      <field name="TEXT">www.qdprobot.com</field>
+    </shadow>
+  </value>
+  </block>
+
+<!--
+        <block name="服务器信息/断网条件" type="QDP_ESP8266_blynk_server2">
+            <value name="qdp_server_add">
+                <shadow type="text">
+                    <field name="TEXT">182.61.28.31</field>
+                </shadow>
+            </value>
+            <value name="qdp_wifi_ssid">
+                <shadow type="text">
+                    <field name="TEXT">QDP</field>
+                </shadow>
+            </value>
+            <value name="qdp_wifi_pass">
+                <shadow type="text">
+                    <field name="TEXT">www.qdprobot.com</field>
+                </shadow>
+            </value>
+            <value name="qdp_auth_key">
+                <shadow type="text">
+                    <field name="TEXT">Get Authtoken from your Blynk project settings!</field>
+                </shadow>
+            </value>
+            <value name="qdp_wifi_Brokennetwork">
+                <block type="logic_boolean">
+                    <field name="BOOL">FALSE</field>
+                </block>
+            </value>
+            <value name="qdp_wifi_errCountSet">
+                <block type="math_number">
+                    <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="qdp_wifi_RstCount">
+                <block type="logic_boolean">
+                    <field name="BOOL">FALSE</field>
+                </block>
+            </value>
+        </block>
+
+<block name="服务器信息,带连接失效记录" type="QDP_ESP8266_blynk_server3">
+            <value name="qdp_server_add">
+                <shadow type="text">
+                    <field name="TEXT">
+                        182.61.28.31
+                    </field>
+                </shadow>
+            </value>
+            <value name="qdp_auth_key">
+                <shadow type="text">
+                    <field name="TEXT">
+                        Get Authtoken from your Blynk project settings！
+                    </field>
+                </shadow>
+            </value>
+            <value name="qdp_wifi_ssid">
+                <shadow type="text">
+                    <field name="TEXT">
+                        QDP
+                    </field>
+                </shadow>
+            </value>
+            <value name="qdp_wifi_pass">
+                <shadow type="text">
+                    <field name="TEXT">
+                        www.qdprobot.com
+                    </field>
+                </shadow>
+            </value>
+            <value name="qdp_wifi_Brokennetwork_times">
+             
+  <shadow type="math_number">
+  <field name="NUM">5</field>
+  </shadow>
+  </value>
+        </block>
+-->
+
+  <block type="QDP_ESP8266_blynk_smartconfig" name="一键配网">
+    <value name="server_add">
+      <shadow type="text">
+        <field name="TEXT">182.61.28.31</field>
+      </shadow>
+    </value>
+    <value name="auth_key">
+      <shadow type="text">
+        <field name="TEXT">Get Authtoken from your Blynk project settings！</field>
+      </shadow>
+    </value>
+  </block>
+
+<block type="QDP_BLYNK_CONNECTED"name="当连接上blynk云服">
+  <statement name="DO">
+  </statement>
+</block>
+<block type="QDP_BLYNK_APP_CONNECTED"name="当设备连接上APP">
+  <statement name="DO">
+  </statement>
+</block>
+<block type="QDP_BLYNK_APP_DISCONNECTED"name="当设备断开APP">
+  <statement name="DO">
+  </statement>
+</block>
+
+<block type="QDP_blynk_iot_CONNECTED"name="硬件连接服务器状态(布尔)"></block>  
+
+  <block type="QDP_blynk_iot_get_data">
+        <mutation>
+          <arg name="vpin_value" vartype="int"></arg>
+        </mutation>
+        <field name="Vpin">V0</field>
+        <statement name="STACK">
+          <block type="serial_println">
+            <field name="serial_select">Serial</field>
+            <value name="CONTENT">
+              <block type="variables_get">
+                <field name="VAR">vpin_value</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+
+  <block type="QDP_webhook_to_get_data">
+    <field name="VPIN">V0</field>
+    <value name="parameter">
+        <shadow type="text">
+            <field name="TEXT">test</field>
+        </shadow>
+    </value>
+    <statement name="function">
+        <block type="serial_println">
+            <field name="serial_select">Serial</field>
+            <value name="CONTENT">
+                <block type="variables_get">
+                    <field name="VAR">Webhook_data</field>
+                </block>
+            </value>
+        </block>
+    </statement>
+</block>    
+
+   <block type="QDP_blynk_iot_push_data_request"name="推送数据">
+  
+  <field name="Vpin">V0</field>
+<value name="Vname">
+<shadow type="math_number">
+<field name="NUM">0</field>
+</shadow>
+</value>
+  </block>
+     <block type="QDP_blynk_iot_syncVirtual"name="同步虚拟管脚数据" ></block>
+     <block type="QDP_Blynk_iot_BLYNK_syncAll"name="同步所有虚拟管脚数据" ></block>
+     
+      <block type="QDP_Blynk_iot_timer" name="定时器">
+       <value name="TIME">
+        <shadow type="math_number">
+          <field name="NUM">1000</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        
+        <block type="QDP_blynk_iot_push_data"name="发送数据到app">
+          <field name="Vpin">V0</field><value name="data">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+
+   
+
+    <block type="QDP_blynk_iot_WidgetLED_COLOR" name="LED组件颜色">
+      <value name="STAT">
+        <shadow type="inout_highlow">
+        </shadow>
+      </value>
+    </block>
+
+
+    <block type="QDP_blynk_iot_WidgetLED_VALUE" name="LED组件亮度">
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="QDP_blynk_email" name="发送邮件">
+      <value name="email_add">
+        <shadow type="text">
+          <field name="TEXT">example@qdprobot.com</field>
+        </shadow>
+      </value>
+      <value name="Subject">
+        <shadow type="text">
+          <field name="TEXT">Subject</field>
+        </shadow>
+      </value>
+      <value name="content">
+        <shadow type="text">
+          <field name="TEXT">Content</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="QDP_blynk_notify" name="发送通知">
+      <value name="content">
+        <shadow type="text">
+          <field name="TEXT">通知内容</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="QDP_blynk_terminal_clear"name="终端清屏"></block>
+    <block type="QDP_blynk_iot_terminal_get"name="终端组件获取文本">
+      <field name="Vpin">V0</field>
+      <statement name="DO">
+        <block type="QDP_serial_println" >
+          <value name="CONTENT">
+            <block type="variables_get">
+              <field name="VAR">action</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+
+    <block type="QDP_blynk_terminal" name="终端组件显示文本">
+      <value name="content">
+        <shadow type="text">
+          <field name="TEXT">Hello,World!</field>
+        </shadow>
+      </value>
+    </block>
+<block type="QDP_blynk_lcd">
+       <field name="Vpin">V0</field>
+       <value name="x">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="y">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">923</field>
+        </shadow>
+      </value> 
+    </block>
+    <block type="QDP_blynk_lcd_clear">
+    </block>
+
+     <block type="QDP_blynk_table">
+     <value name="xnyj">
+      <shadow type="math_number">
+        <field name="NUM">V0</field>
+      </shadow> 
+    </value> 
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value> 
+    <value name="mingcheng">
+      <shadow type="text">
+        <field name="TEXT">Name</field>
+      </shadow>
+    </value>
+    <value name="shujv">
+      <shadow type="text">
+        <field name="TEXT">John</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="QDP_blynk_table_update">
+   <value name="xnyj">
+    <shadow type="math_number">
+      <field name="NUM">V0</field>
+    </shadow> <value name="xnyj">
+      <shadow type="math_number">
+        <field name="NUM">V0</field>
+      </shadow>
+    </value> 
+  </value> 
+  <value name="id">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value> 
+  <value name="mingcheng">
+    <shadow type="text">
+      <field name="TEXT">Name</field>
+    </shadow>
+  </value>
+  <value name="shujv">
+    <shadow type="text">
+      <field name="TEXT">John</field>
+    </shadow>
+  </value>
+</block>
+<block type="QDP_blynk_table_highlight">
+  <value name="xnyj">
+    <shadow type="math_number">
+      <field name="NUM">V0</field>
+    </shadow> <value name="xnyj">
+      <shadow type="math_number">
+        <field name="NUM">V0</field>
+      </shadow>
+    </value> 
+  </value> 
+  <value name="id">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value> 
+</block>
+<block type="QDP_blynk_table_select">
+  <value name="xnyj">
+    <shadow type="math_number">
+      <field name="NUM">V0</field>
+    </shadow> <value name="xnyj">
+      <shadow type="math_number">
+        <field name="NUM">V0</field>
+      </shadow>
+    </value> 
+  </value> 
+  <value name="id">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value> 
+</block>
+<block type="QDP_blynk_table_unselect">
+ <value name="xnyj">
+  <shadow type="math_number">
+    <field name="NUM">V0</field>
+  </shadow> <value name="xnyj">
+    <shadow type="math_number">
+      <field name="NUM">V0</field>
+    </shadow>
+  </value> 
+</value> 
+<value name="id">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value> 
+</block>
+<block type="QDP_blynk_table_cleardata">
+ <value name="xnyj">
+  <shadow type="math_number">
+    <field name="NUM">V0</field>
+  </shadow> <value name="xnyj">
+    <shadow type="math_number">
+      <field name="NUM">V0</field>
+    </shadow>
+  </value> 
+</value> 
+<value name="id">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+    <block type="QDP_blynk_time_input_1" name="时间输入">
+      <field name="Vpin">V0</field>
+      <statement name="DO">
+        <block type="QDP_serial_println">
+          <value name="CONTENT">
+            <block type="variables_get"
+            ><field name="VAR">hour</field>
+          </block>
+        </value>
+        <next>
+          <block type="QDP_serial_println">
+            <value name="CONTENT">
+              <block type="variables_get">
+                <field name="VAR">minute</field>
+              </block>
+            </value>
+            <next>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+
+  <block type="QDP_blynk_videourl" name="视频流">
+    <value name="url">
+      <shadow type="text">
+        <field name="TEXT">http://yourvideostream.url</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="QDP_blynk_bridge_auth" name="桥接授权码">
+    <value name="auth">
+      <shadow type="text">
+        <field name="TEXT">Get Authtoken from your Blynk project settings！</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="QDP_blynk_bridge_digitalWrite" name="桥接数字输出">
+    <value name="PIN">
+      <shadow type="math_number">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+    <value name="STAT">
+    <shadow type="inout_highlow">HIGH</shadow>
+  </value> 
+  </block>
+
+  <block type="QDP_blynk_bridge_AnaloglWrite" name="桥接模拟输出">
+    <value name="PIN">
+      <shadow type="math_number">
+        <field name="NUM">10</field>
+      </shadow>
+    </value>
+    <value name="NUM">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+<block type="QDP_blynk_bridge_VPin" name="桥接虚拟管脚">
+  <value name="NUM">
+    <shadow type="math_number">
+      <field name="NUM">0</field>
+    </shadow>
+  </value>
+</block>
+
+<block type="QDP_blynk_WidgetRTC_init" name="RTC组件">
+  <value name="NUM">
+    <shadow type="math_number">
+      <field name="NUM">10</field>
+    </shadow>
+  </value>
+</block>
+
+<block type="QDP_blynk_WidgetRTC_get_time" name="RTC组件获取时间"></block>
+
+<block type="QDP_blynk_setproperty">
+ <value name="value">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+ </value>
+</block>
+
+
+<block type="QDP_blynk_iot_playmusic" id="jKh8=(4en%!S#_`,H)*j" x="-1054" y="115"><field name="Vpin">V0</field><statement name="DO"><block type="ESP8266_Mp3_init" id="/Sun|:[7v}vDO%7GQ!wj"><field name="PIN">1</field><next><block type="variables_declare" id="00}jR`Xw6r|C7OaoNktH"><field name="VAR">action</field><field name="TYPE">String</field><value name="VALUE"><block type="text" id="4%QkLVSNa[{Gfy!MqcK?"><field name="TEXT"></field></block></value><next><block type="controls_if" id="aw;NDxlmk)P%_IzwrAo2"><mutation elseif="3"></mutation><value name="IF0"><block type="logic_compare" id="9OwT^w;Nl9Yt4JRO:j+_"><field name="OP">EQ</field><value name="A"><block type="variables_get" id="7SCO$uR-L]iS9xJ%L4rF"><field name="VAR">action</field></block></value><value name="B"><block type="text" id="F0{/Zl@p#G,7]HL=~Gd%"><field name="TEXT">play</field></block></value></block></value><statement name="DO0"><block type="qdp_ESP8266_MP3_startpause" id="}MeZtK7EU+|$OV(Ra[,*"><field name="PIN22">1</field></block></statement><value name="IF1"><block type="logic_compare" id="bntD}zd?oTei`2p^q.-6"><field name="OP">EQ</field><value name="A"><block type="variables_get" id="B=o;Kv%4%di[DKU{a(4^"><field name="VAR">action</field></block></value><value name="B"><block type="text" id="y/+0ixhML[/8~KkC?v^2"><field name="TEXT">stop</field></block></value></block></value><statement name="DO1"><block type="qdp_ESP8266_MP3_startpause" id="]zH_E{`^R6wN$GW?p7U2"><field name="PIN22">0</field></block></statement><value name="IF2"><block type="logic_compare" id="dI6+10SB*^6yyT)vFS$b"><field name="OP">EQ</field><value name="A"><block type="variables_get" id="_fIn-w8qjs5*/t@yb1Yf"><field name="VAR">action</field></block></value><value name="B"><block type="text" id="HlQB}r^5tzh1w0aAH#/B"><field name="TEXT">next</field></block></value></block></value><statement name="DO2"><block type="qdp_ESP8266_MP3_previous_next" id="0GVY1NQH+(::Qv@)E#8^"><field name="PIN22">1</field></block></statement><value name="IF3"><block type="logic_compare" id="dXz/zhrUR*YbM{f/u7}^"><field name="OP">EQ</field><value name="A"><block type="variables_get" id="UHeElJm*59RpUg7fyT]C"><field name="VAR">action</field></block></value><value name="B"><block type="text" id="pN+2l4B~a8bij_drqWJ0"><field name="TEXT">prev</field></block></value></block></value><statement name="DO3"><block type="qdp_ESP8266_MP3_previous_next" id="a:USI7XG2:_Nz}ac8!Yj"><field name="PIN22">0</field></block></statement></block></next></block></next></block></statement></block>
+
+<block type="QDP_blynk_light"name="光线传感器">
+  <field name="Vpin">V0</field>
+  <statement name="DO">
+    <block type="QDP_serial_println" >
+      <value name="CONTENT">
+        <block type="variables_get">
+          <field name="VAR">lx</field>
+        </block>
+      </value>
+    </block>
+  </statement>
+</block>
+
+<block type="QDP_blynk_gravity" name="重力传感器">
+  <field name="Vpin">V0</field>
+  <statement name="DO">
+    <block type="QDP_serial_println">
+      <value name="CONTENT">
+        <block type="variables_get"
+        ><field name="VAR">x</field>
+      </block>
+    </value>
+    <next>
+      <block type="QDP_serial_println">
+        <value name="CONTENT">
+          <block type="variables_get">
+            <field name="VAR">y</field>
+          </block>
+        </value>
+        <next>
+          <block type="QDP_serial_println">
+            <value name="CONTENT">
+              <block type="variables_get" >
+                <field name="VAR">z</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</statement>
+</block>
+
+<block type="QDP_blynk_acc" name="加速度传感器">
+  <field name="Vpin">V0</field>
+  <statement name="DO">
+    <block type="QDP_serial_println">
+      <value name="CONTENT">
+        <block type="variables_get"
+        ><field name="VAR">x</field>
+      </block>
+    </value>
+    <next>
+      <block type="QDP_serial_println">
+        <value name="CONTENT">
+          <block type="variables_get">
+            <field name="VAR">y</field>
+          </block>
+        </value>
+        <next>
+          <block type="QDP_serial_println">
+            <value name="CONTENT">
+              <block type="variables_get" >
+                <field name="VAR">z</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</statement>
+</block>
+
+
+
+
+</category>
+
+
+<category id="catQDPdisplay" name=".掌控屏Hdisplay" colour="#6495ED">
+
+  <block type="qdp_ESP8266_ZKDisplay_init">   </block>
+
+  <block type="qdp_ESP8266_display_START"></block>
+
+<block type="qdp_ESP8266_display_button">
+  <value name="TEXT">
+  <shadow type="text">
+  <field name="TEXT">U</field>
+  </shadow>
+  </value>
+  </block>
+
+<block type="qdp_ESP8266_display_variable"></block>
+
+
+
+
+  <block type="qdp_ESP8266_display_print">
+  
+  <value name="N1">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+    </value>
+  
+  
+  </block>  
+
+<block type="qdp_ESP8266_zkpdisplay_sleep"></block>
+
+
+
+<block type="qdp_ESP8266_zkpdisplay_buzzer">
+  <value name="num1">
+  <shadow type="math_number">
+    <field name="NUM">50</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_zkpdisplay_color"></block>
+
+<block type="qdp_ESP8266_zkpdisplay_clscolor">
+   <value name="num1">
+  <shadow type="math_number">
+    <field name="NUM">1024</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_zkpdisplay_pic"></block>
+
+<block type="qdp_ESP8266_zkpdisplay_page"></block>
+
+<block type="qdp_ESP8266_zkpdisplay_drawinground">
+  <value name="num1">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num2">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num3">
+  <shadow type="math_number">
+    <field name="NUM">30</field>
+  </shadow>
+</value>
+ <value name="num4">
+  <shadow type="math_number">
+    <field name="NUM">1024</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_zkpdisplay_function1">
+  <value name="num1">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num2">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num3">
+  <shadow type="math_number">
+    <field name="NUM">200</field>
+  </shadow>
+</value>
+ <value name="num4">
+  <shadow type="math_number">
+    <field name="NUM">200</field>
+  </shadow>
+</value>
+<value name="num5">
+  <shadow type="math_number">
+    <field name="NUM">1024</field>
+  </shadow>
+</value>
+</block>
+
+
+<block type="qdp_ESP8266_zkpdisplay_TEXT">
+  <value name="num1">
+  <shadow type="math_number">
+    <field name="NUM">150</field>
+  </shadow>
+</value>
+ <value name="num2">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num3">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num4">
+  <shadow type="math_number">
+    <field name="NUM">30</field>
+  </shadow>
+</value>
+<value name="num5">
+  <shadow type="math_number">
+    <field name="NUM">1024</field>
+  </shadow>
+</value>
+ <value name="num6">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+<value name="text3">
+  <shadow type="text">
+    <field name="TEXT">English/变量</field>
+  </shadow>
+</value>
+</block>
+
+<block type="qdp_ESP8266_zkpdisplay_TEXT_CN">
+  <value name="num1">
+  <shadow type="math_number">
+    <field name="NUM">150</field>
+  </shadow>
+</value>
+ <value name="num2">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num3">
+  <shadow type="math_number">
+    <field name="NUM">100</field>
+  </shadow>
+</value>
+ <value name="num4">
+  <shadow type="math_number">
+    <field name="NUM">30</field>
+  </shadow>
+</value>
+<value name="num5">
+  <shadow type="math_number">
+    <field name="NUM">1300</field>
+  </shadow>
+</value>
+ <value name="num6">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="arrayName">
+  <shadow type="text">
+  <field name="TEXT">array1</field>
+  </shadow>
+  </value>
+<value name="text3">
+   <shadow type="text">
+            <field name="TEXT">中文</field>
+          </shadow>
+        </value> 
+</block>
+
+<block type="qdp_ESP8266_zkpdisplay_order">
+  <value name="text">
+  <shadow type="text">
+    <field name="TEXT">command</field>
+  </shadow>
+</value>
+</block>
+
+</category> 
+
+<category id="catQDPstorage" name=".储存storage" colour="0">
+  <block type="QDP8266_EEPROM_INIT">
+    <value name="size">
+      <shadow type="math_number">
+        <field name="NUM">1024</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="QDP8266_EEPROM_exists">
+    <value name="key">
+      <shadow type="text">
+        <field name="TEXT">key</field>
+      </shadow>
+    </value>    
+  </block>
+  <block type="QDP8266_EEPROM_set">
+    <value name="key">
+      <shadow type="text">
+        <field name="TEXT">key</field>
+      </shadow>
+    </value>  
+    <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+  </block>
+  <block type="QDP8266_EEPROM_clear"></block>
+  <block type="QDP8266_EEPROM_apply"></block>
+  <block type="QDP8266_EEPROM_get">
+    <value name="key">
+      <shadow type="text">
+        <field name="TEXT">key</field>
+      </shadow>
+    </value> 
+  </block>
+  <block type="QDP_read_eerom_string"></block>
+
+<block type="QDP_eerom_string_write">
+  <value name="data">
+   <shadow type="text">
+    <field name="TEXT">Think Different</field>
+   </shadow>
+  </value>
+</block>
+
+</category>   
+<category id="catQDPList" name=".列表List" colour="270">
+ <block type="qdp_create_list">
+</block>
+
+ <block type="qdp_list_length">
+</block>
+
+ <block type="qdp_list_item">
+  <value name="item">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value> 
+</block>
+
+ <block type="qdp_list_assignment">
+  <value name="item">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+  <value name="value">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+ <block type="qdp_add_data_to_the_list">
+  <value name="data">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+ <block type="qdp_list_clear">
+</block>
+
+ <block type="qdp_clear_list_item">
+  <value name="item">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+</category>  
+
+<category id="catQDPesp" name=".ESP-WIFI" colour="270">
+  <block type="QDP_esp8266_smartConfig"></block>
+  <block type="QDP_esp8266_smartConfig_"></block>
+  <block type="QDP_esp8266_config_access_point">
+    <value name="ssid">
+      <shadow type="text">
+        <field name="TEXT">QDP</field>
+      </shadow>
+    </value>
+    <value name="pwd">
+      <shadow type="text">
+        <field name="TEXT">www.qdprobot.com</field>
+      </shadow>
+    </value>
+  </block>
+
+<block type="QDP_esp8266_config_station">
+    <value name="ssid">
+        <shadow type="text">
+            <field name="TEXT">QDP</field>
+        </shadow>
+    </value>
+    <value name="pwd">
+        <shadow type="text">
+            <field name="TEXT">www.qdprobot.com</field>
+        </shadow>
+    </value>
+    <next>
+        <block type="QDP_base_setup">
+            <statement name="DO">
+                <block type="controls_whileUntil">
+                    <field name="MODE">UNTIL</field>
+                    <value name="BOOL">
+                        <shadow type="logic_boolean">
+                            <field name="BOOL">FALSE</field>
+                        </shadow>
+                        <block type="QDP_WiFi_status"></block>
+                    </value>
+                    <statement name="DO">
+                        <block type="serial_println">
+                            <field name="serial_select">Serial</field>
+                            <value name="CONTENT">
+                                <block type="text">
+                                    <field name="TEXT">Internet connection!</field>
+                                </block>
+                            </value>
+                            <next>
+                                <block type="controls_delay">
+                                    <field name="UNIT">delay</field>
+                                    <value name="DELAY_TIME">
+                                        <shadow type="math_number">
+                                            <field name="NUM">500</field>
+                                        </shadow>
+                                    </value>
+                                </block>
+                            </next>
+                        </block>
+                    </statement>
+                    <next>
+                        <block type="serial_println">
+                            <field name="serial_select">Serial</field>
+                            <value name="CONTENT">
+                                <block type="QDP_esp8266_wifi_IP"></block>
+                            </value>
+                        </block>
+                    </next>
+                </block>
+            </statement>
+        </block>
+    </next>
+</block>
+  <block type="QDP_EMailSender_init" name="邮件">
+      <value name="email_login">
+        <shadow type="text">
+          <field name="TEXT">example@qdprobot.com</field>
+        </shadow>
+      </value>
+      <value name="email_password">
+        <shadow type="text">
+          <field name="TEXT">12345678</field>
+        </shadow>
+      </value>
+    </block>
+ <block type="QDP_EMailSender_send" name="发送邮件">
+      <value name="subject">
+        <shadow type="text">
+          <field name="TEXT">Input your subject here</field>
+        </shadow>
+      </value>
+      <value name="message">
+        <shadow type="text">
+          <field name="TEXT">Input your message here</field>
+        </shadow>
+      </value>
+      <value name="email_to">
+        <shadow type="text">
+          <field name="TEXT">received by@qdprobot.com</field>
+        </shadow>
+      </value>
+    </block>
+
+  <block type="QDP_esp8266_config_domaine_name_mDNS">
+    <value name="domaine_name">
+      <shadow type="text">
+        <field name="TEXT">qdprobot</field>
+      </shadow>
+    </value> 
+  </block>
+
+  <block type="QDP_esp8266rst"></block>
+
+<block type="QDP8266_set_mac_address">
+  <value name="mac_address">
+    <shadow type="text">
+      <field name="TEXT">30:AE:A4:58:9D:7C</field>
+    </shadow>
+  </value>
+</block>
+
+  <block type="QDP_esp_now_send">
+  <value name="mac">
+    <block type="text">
+      <field name="TEXT">30:AE:A4:58:9D:7C</field>
+    </block>
+  </value>
+  <value name="data">
+    <block type="text_join">
+      <value name="A">
+        <shadow type="text">
+          <field name="TEXT">random_</field>
+        </shadow>
+      </value>
+      <value name="B">
+        <shadow type="text">
+          <field name="TEXT">Mixly</field>
+        </shadow>
+        <block type="math_random_int">
+          <value name="FROM">
+            <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+  </block>
+</value>
+<statement name="success">
+  <block type="serial_println">
+    <field name="serial_select">Serial</field>
+    <value name="CONTENT">
+      <block type="text">
+        <field name="TEXT">Sent with success</field>
+      </block>
+    </value>
+  </block>
+</statement>
+<statement name="failure">
+  <block type="serial_println">
+    <field name="serial_select">Serial</field>
+    <value name="CONTENT">
+      <block type="text">
+        <field name="TEXT">Error sending the data</field>
+      </block>
+    </value>
+  </block>
+</statement>
+</block>
+
+<block type="QDP_esp_now_receive">
+  <statement name="receive_data">
+    <block type="serial_println">
+      <field name="serial_select">Serial</field>
+      <value name="CONTENT">
+        <block type="variables_get">
+          <field name="VAR">mydata</field>
+        </block>
+      </value>
+    </block>
+  </statement>
+</block>
+
+<block type="QDP_find_mac"></block>
+
+
+</category> 
+<category id="catespPagewebEdit" name=".网页编辑Web" colour="270">
+ <block type="QDP_ESP8266_web_page_init">
+  <statement name="DO">
+    <block type="QDP_make_arduino_comment_text_1">
+    <field name="data">要插入的网页元素放置在这里</field>
+    </block>
+  </statement>
+ </block>
+ <block type="QDP_ESP8266_web_page_add">
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="name">
+      <shadow type="text">
+        <field name="TEXT">displayName</field>
+      </shadow>
+    </value>
+ </block>
+ <block type="QDP_ESP8266_web_page_addTemperatureCard">
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="name">
+      <shadow type="text">
+        <field name="TEXT">displayName</field>
+      </shadow>
+    </value>
+ </block>
+ <block type="QDP_ESP8266_web_page_addSliderCard">
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="name">
+      <shadow type="text">
+        <field name="TEXT">displayName</field>
+      </shadow>
+    </value>
+ </block>
+ <block type="QDP_ESP8266_web_page_attachSliderChanged"></block>
+  <block type="QDP_ESP8266_web_page_SliderChanged" >
+    <statement name="DO">
+      <block type="controls_if" >
+      <value name="IF0">
+        <block type="text_equals_starts_ends" >
+          <field name="DOWHAT">equals</field>
+          <value name="STR1">
+            <shadow type="text" >
+            <field name="TEXT"></field>
+            </shadow>
+            <block type="variables_get" >
+            <field name="VAR">id</field></block>
+          </value>
+          <value name="STR2">
+            <shadow type="text" >
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="QDP_ESP8266_web_page_Slider_id" >
+            <value name="id">
+              <shadow type="math_number" >
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="serial_println" >
+          <field name="serial_select">Serial</field>
+          <value name="CONTENT">
+            <block type="variables_get" ><field name="VAR">value</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="QDP_ESP8266_web_page_attachButtonClick"></block>
+  <block type="QDP_ESP8266_web_page_ButtonClick" >
+    <statement name="DO">
+      <block type="controls_if" >
+      <value name="IF0">
+        <block type="text_equals_starts_ends" >
+          <field name="DOWHAT">equals</field>
+          <value name="STR1">
+            <shadow type="text" >
+            <field name="TEXT"></field>
+            </shadow>
+            <block type="variables_get" >
+            <field name="VAR">id</field></block>
+          </value>
+          <value name="STR2">
+            <shadow type="text" >
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="QDP_ESP8266_web_page_Button_id" >
+            <value name="id">
+              <shadow type="math_number" >
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="serial_println" >
+          <field name="serial_select">Serial</field>
+          <value name="CONTENT">
+            <block type="variables_get" ><field name="VAR">id</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="QDP_ESP8266_web_page_addLineChart">
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="name">
+      <shadow type="text">
+        <field name="TEXT">displayName</field>
+      </shadow>
+    </value>
+    <value name="y_axis_name">
+      <shadow type="text">
+        <field name="TEXT">Power KwH</field>
+      </shadow>
+    </value>
+        <value name="x_axis_value">
+      <shadow type="math_number">
+        <field name="NUM">x_axis</field>
+      </shadow>
+    </value>
+    <value name="y_axis_value">
+      <shadow type="math_number">
+        <field name="NUM">y_axis</field>
+      </shadow>
+    </value>
+ </block>
+  <block type="QDP_ESP8266_web_page_updateLineChart">
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="x_axis_value">
+      <shadow type="math_number">
+        <field name="NUM">x_axis</field>
+      </shadow>
+    </value>
+    <value name="y_axis_value">
+      <shadow type="math_number">
+        <field name="NUM">y_axis</field>
+      </shadow>
+    </value>
+ </block>
+ <block type="QDP_ESP8266_web_page_update">
+    <value name="id">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="value">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+ </block>
+  <block type="QDP_web_print_data">
+  <value name="web_printing">
+  <shadow type="math_number">
+    <field name="NUM">0</field>
+  </shadow>
+</value>
+</block>
+
+<block type="QDP_web_receive_data">
+    <statement name="data">
+        <block type="serial_println">
+            <field name="serial_select">Serial</field>
+            <value name="CONTENT">
+                <block type="variables_get">
+                    <field name="VAR">web_data</field>
+                </block>
+            </value>
+        </block>
+    </statement>
+</block>
+</category> 
+
+
+
+
+<category id="catQDPother" name=".其它other" colour="#AE8F00">
+
+  
+
+    <block type="QDP_get_the_number_of_days_between_the_two_dates">
+      <value name="year_start">
+        <shadow type="math_number">
+          <field name="NUM">2000</field>
+        </shadow>
+      </value> 
+      <value name="month_start">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+      <value name="day_start">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+      <value name="year_end">
+        <shadow type="math_number">
+          <field name="NUM">2020</field>
+        </shadow>
+      </value> 
+      <value name="month_end">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+      <value name="day_end">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+    </block>  
+
+  <block type="QDP_ESP8266_Task"></block>
+<block type="QDP_Arduinojson"></block>
+
+<block type="QDP_base_setup"></block> 
+
+<block type="QDP_pointer_array">
+    <field name="lists_create_type">int</field>
+    <field name="lists_create_name">mylist</field>
+    <value name="list_data">
+        <shadow type="math_number">
+            <field name="NUM\">0,0,0</field>
+        </shadow>
+        <block type="QDP_txt">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+                <block type="factory_block_return">
+                    <field name="VALUE">PETER</field>
+                </block>
+            </value>
+            <value name="ADD1">
+                <block type="factory_block_return">
+                    <field name="VALUE">MARY</field>
+                </block>
+            </value>
+            <value name="ADD2">
+                <block type="factory_block_return">
+                    <field name="VALUE">JOHN</field>
+                </block>
+            </value>
+        </block>
+    </value>
+</block>
+ 
+<block type="QDP_colour_test">
+    </block>
+
+
+<block type="QDP_make_arduino_comment_text_1">
+    </block>
+
+<block type="QDP_make_arduino_comment_text_3">
+    </block>
+
+
+ <block type="qdp_timer" name="定时器">
+       <value name="TIME">
+        <shadow type="math_number">
+          <field name="NUM">1000</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+    </block> 
+
+
+
+<block type="qdp_millis"></block>
+
+
+<block type="qdp_global_variables">
+  <value name="VAR">
+        <shadow type="variables_get">
+          <field name="VAR">item</field>
+        </shadow>
+      </value>
+</block>
+
+<block type="qdp_local_variables">
+  <value name="VAR">
+        <shadow type="variables_get">
+          <field name="VAR">item</field>
+        </shadow>
+      </value>
+</block>
+
+<block type="qdp_Auto_increment"></block>
+
+<block type="QDP_serial_println"></block>
+
+<block type="QDProbot_comment_picture_change_3"></block>
+
+</category> 
+
+</category> 
+

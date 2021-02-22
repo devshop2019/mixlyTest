@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "D:\\git\\github\\devshop2019\\mixlyTest\\arduino\\portable\\packages\\VietESP8266\\hardware\\esp8266\\1.0.3\\cores\\esp8266"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "D:\\git\\github\\devshop2019\\mixlyTest\\arduino\\portable\\packages\\VietESP8266\\hardware\\esp8266\\1.0.3\\variants\\vietesp8266"
+  },
+  {
+    "Sourcefile": "D:\\git\\github\\devshop2019\\mixlyTest\\mixlyBuild\\sketch\\testArduino.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
