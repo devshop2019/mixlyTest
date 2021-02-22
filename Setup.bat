@@ -178,7 +178,7 @@ IF "%vesp8266_select%"=="n" (
 		echo.
 		echo.
 		cd "%~dp0"\PortableGit\cmd\
-		git clone https://github.com/devshop2019/win_vesp8266.git "%~dp0arduino\portable\packages\vietesp8266\
+		git clone https://github.com/devshop2019/win_vesp8266.git "%~dp0arduino\portable\packages\VietESP8266\
 	)
 )
 
